@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int a,b,quotient,aremainder;
+    printf("a is:");
+    scanf("%d",&a);
+    
+    printf("b is:");
+    scanf("%d",&b);
+    
+    quotient=a/b;
+    aremainder=a%b;
+    
+    printf("the quotient is:%d\n",quotient);
+    printf("the aremainder is:%d",aremainder);
+    return 0;
+}
+OUTPUT:
+a is:15
+b is:5
+the quotient is:3
+the aremainder is:0
+
+=== Code Execution Successful ===
