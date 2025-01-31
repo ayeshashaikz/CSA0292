@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int principal_amount,rate_of_interest,atime;
+    printf("principal_amount:");
+    scanf("%d",&principal_amount);
+
+    printf("rate_of_interest:");
+    scanf("%d",&rate_of_interest);
+
+    printf("atime:");
+    scanf("%d",&atime);
+
+    int simple_interest=principal_amount*rate_of_interest*atime/100;
+    printf("the required simple interest is:%d",simple_interest);
+    return 0;
+}
+
+OUTPUT:
+principal_amount:1345
+rate_of_interest:2
+atime:2
+the required simple interest is:53
+
+=== Code Execution Successful ===
