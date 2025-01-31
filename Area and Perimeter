@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int length,breadth,area,perimeter;
+    printf("length is:");
+    scanf("%d",&length);
+    
+    printf("breadth is:");
+    scanf("%d",&breadth);
+    
+    area=length*breadth;
+    perimeter=2*(length+breadth);
+    printf("the area is:%d\n",area);
+    printf("the perimeter is:%d",perimeter);
+    return 0;
+}
+OUTPUT
+length is:10
+breadth is:5
+the area is:50
+the perimeter is:30
+
+=== Code Execution Successful ===
