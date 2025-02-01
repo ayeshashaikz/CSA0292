@@ -1,0 +1,39 @@
+#include <stdio.h>
+int  main() {
+    int rice_quantity, rice_price,oil_quantity,oil_price,sugar_quantity,sugar_price,total,tax_amount,final_amount;
+    printf("the rice quantity is:");
+    scanf("%d",&rice_quantity);
+    
+     printf("the rice price is:");
+    scanf("%d",&rice_price);
+    
+    printf("the oil quantity is:");
+    scanf("%d",&oil_quantity);
+    
+    printf("oil price is:");
+    scanf("%d",&oil_price); 
+    
+    printf("the sugar price is:");
+    scanf("%d",&sugar_price);
+    
+    printf("the sugar quantity is:");
+    scanf("%d",&sugar_quantity); 
+    
+    total=(rice_quantity*rice_price)+(oil_quantity*oil_price)+(sugar_quantity+sugar_price);
+    tax_amount=total*5/100;
+    final_amount=tax_amount+total;
+    printf("total:%d\ntaxamount:%d\nthe final amount is:%d",total,tax_amount,final_amount);
+    return 0;
+}
+OUTPUT
+the rice quantity is:2
+the rice price is:200
+the oil quantity is:2
+oil price is:300
+the sugar price is:50
+the sugar quantity is:2
+total:1052
+taxamount:52
+the final amount is:1104
+
+=== Code Execution Successful ===
