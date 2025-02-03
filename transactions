@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+    int initial_balance,deposit,withdraw,final_balance;
+    char b[]="₹";
+    printf("initial balance is=%s",b);
+    scanf("%d",&initial_balance);
+    printf("the deposit is=%s",b);
+    scanf("%d",&deposit);
+    printf("the withdraw is=%s",b);
+    scanf("%d",&withdraw);
+    final_balance=initial_balance+deposit-withdraw;
+    printf("the final balance is=%s%d",b,final_balance);
+    return 0;
+}
+OUTPUT:
+initial balance is=₹5000
+the deposit is=₹2000
+the withdraw is=₹1500
+the final balance is=₹5500
+
+=== Code Execution Successful ===
