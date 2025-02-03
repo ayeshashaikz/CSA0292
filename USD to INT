@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int amount_in_INR,amount_in_USD;
+    printf("amount in USD is:");
+    scanf("%d",&amount_in_USD);
+    amount_in_INR=83*(amount_in_USD);
+    printf("the amount in INR is=%d ",amount_in_INR);
+    return 0;
+}
+OUTPUT
+amount in USD is:100
+the amount in INR is=8300 
+
+=== Code Execution Successful ===
