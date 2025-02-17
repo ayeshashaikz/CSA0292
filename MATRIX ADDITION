@@ -28,7 +28,7 @@ int main() {
         }
         printf("\n");
     }
-     printf("matrix C is=\n");
+     printf("matrix sum is=\n");
      for(i=0;i<2;i++)
     {
         for(j=0;j<2;j++){
@@ -48,6 +48,6 @@ matrix A is=
 matrix B is=
 7 8
 5 6
-matrix C is=
+matrix sum is=
 10 12
 10 12
