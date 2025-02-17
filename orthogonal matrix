@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main(){
+    int i,j;
+    int A[2][2]={{2,3} ,{4,5}};
+    int B[2][2];
+    int C[2][2]={{0,0},{0,0}};
+    
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++){
+           C[i][j]=A[i][j]*B[j][i];
+        }
+    }
+    for(i=0;i<2;i++){
+        for(j=0;j<2;j++){
+            B[j][i]= A[i][j];
+        }
+    }
+    printf("matrix A is=\n");
+     for(i=0;i<2;i++){
+        for(j=0;j<2;j++){
+            printf("%d",A[i][j]);
+        }printf("\n");
+    }
+    printf("matrix A transpose B is=\n");
+    for(j=0;j<2;j++){
+        for(i=0;i<2;i++){
+            printf("%d",B[j][i]);
+        }printf("\n");
+    }
+    printf("Orthogonal matrix is=\n");
+    for(j=0;j<2;j++){
+        for(i=0;i<2;i++){
+            printf("%d",C[i][j]);
+        }printf("\n");
+    }
+    
+    
+    return 0;
+}
+out put:
+matrix A is=
+2 3
+4 5
+matrix A transpose B is=
+2 4
+3 5
+Orthogonal matrix is=
+0 0
+0 0
