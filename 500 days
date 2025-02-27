@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// Function to convert days into years, months, weeks, and days
+void convertDays(int total_days) {
+    int years, months, weeks, days;
+
+    years = total_days / 365;  
+    total_days %= 365;  
+
+    months = total_days / 30;  
+    total_days %= 30;  
+
+    weeks = total_days / 7;  
+    days = total_days % 7;  
+
+    printf("500 days is approximately:\n");
+    printf("%d years\n", years);
+    printf("%d months\n", months);
+    printf("%d weeks\n", weeks);
+    printf("%d days\n", days);
+}
+
+int main() {
+    int total_days = 500;
+    convertDays(total_days);  // Calling the function
+    return 0;
+}
+Output:
+500 days is approximately:
+1 years
+4 months
+2 weeks
+6 days
